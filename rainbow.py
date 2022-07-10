@@ -40,14 +40,14 @@ dictNameGameName = {}  # "老侯": "woshishenmou", "刘维": "minghaixiaoyao", "
 dictNameGameMark = {}  # "老侯": 0, "刘维": 0, "梁逸群": 0
 dictNameNextTime = {}  # "老侯": 0, "刘维": 0, "梁逸群": 0
 while True:
-    name = input("Please enter the nickname you want to hear: (For example: 'Tom') [Enter 'exit' to exit]\n")
+    name = input("Please enter the nickname you want to hear: (For example: 'Tom') [Enter 'exit' to stop input name]\n")
     if name == "exit":
         break
     nameInG = input("Please enter the username in Rainbow 6 Siege: \n")
     dictNameGameName[name] = nameInG
     dictNameNextTime[name] = 0
     dictNameGameMark[name] = 0
-    print("You monitored {}", name, ", and his username is", nameInG)
+    print("You monitored ", name, ", and his username is", nameInG)
 
 while True:
     for i in dictNameGameName.keys():
